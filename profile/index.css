@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #e8e8e8;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+}
+
+/* ── HEADER ── */
+#header {
+    background-color: rgba(13, 13, 13, 0.97);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    border-bottom: 1px solid #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#NAME {
+    background-color: transparent;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+#nametext {
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #2a2a2a;
+    background: transparent;
+    color: #e8e8e8;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.15s ease;
+}
+
+button:hover {
+    background-color: #1a1a1a;
+    border-color: #ffffff;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: none;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+#work {
+    padding: 7px 14px;
+    margin-right: 4px;
+    border-radius: 8px;
+    border: none;
+    color: #888;
+}
+
+#about {
+    padding: 7px 14px;
+    margin-right: 4px;
+    border-radius: 8px;
+    border: none;
+    color: #888;
+}
+
+#contact {
+    padding: 7px 14px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #888;
+}
+
+#work:hover, #about:hover, #contact:hover {
+    color: #e8e8e8;
+    background: #1a1a1a;
+    border: none;
+    transform: none;
+}
+
+#hireme {
+    padding: 8px 20px;
+    margin-right: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0d0d0d;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#hireme:hover {
+    background: #e0e0e0;
+    color: #0d0d0d;
+    transform: translateY(-1px);
+    box-shadow: none;
+    border: none;
+}
+
+/* ── INTRO / HERO ── */
+#intro {
+    background-color: #0d0d0d;
+    padding: 72px 40px 56px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#greenbutton {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    border-radius: 100px;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding: 5px 14px 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: default;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 8px;
+    font-family: inherit;
+}
+
+#greenbutton::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+#bigintro h5 {
+    font-size: 48px !important;
+    color: #f0f0f0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    font-family: inherit;
+}
+
+#bigintro p {
+    color: #ffffff !important;
+    font-size: 48px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    font-family: inherit;
+}
+
+#smallintro p {
+    margin-top: 18px !important;
+    color: #666 !important;
+    font-size: 16px;
+    max-width: 480px;
+    line-height: 1.75;
+    font-family: inherit;
+}
+
+#cv {
+    border-radius: 8px !important;
+    padding: 11px 26px !important;
+    margin-right: 10px !important;
+    margin-top: 28px;
+    background: #ffffff;
+    color: #0d0d0d;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+}
+
+#cv:hover {
+    background: #e0e0e0;
+    color: #0d0d0d;
+    border: none;
+    transform: translateY(-1px);
+}
+
+#seemywork {
+    border-radius: 8px !important;
+    padding: 11px 26px !important;
+    margin-bottom: 0 !important;
+    margin-top: 28px;
+    background: transparent;
+    color: #e8e8e8;
+    border: 1px solid #2a2a2a;
+    font-size: 15px;
+    display: inline-block;
+}
+
+/* ── ABOUT ME ── */
+#aboutme {
+    background-color: #111;
+    padding: 36px 40px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#aboutme > p {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+#broderline {
+    background-color: #0d0d0d;
+    margin-top: 0;
+    border-left: 3px solid #ffffff;
+    border-radius: 0 8px 8px 0;
+}
+
+#broderline p {
+    margin: 0 !important;
+    font-family: inherit !important;
+    font-size: 17px !important;
+    padding: 22px 24px !important;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* ── SKILLS ── */
+div:has(> #skills) {
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+div:has(> #skills) > p {
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 !important;
+    padding: 36px 40px 14px !important;
+    background: transparent !important;
+}
+
+#skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 40px 36px;
+    margin-top: 0;
+}
+
+#skills button {
+    border-radius: 100px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-family: inherit;
+    font-size: 13px;
+    border: 1px solid #252525;
+    padding: 7px 18px;
+}
+
+#skills button:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* ── WORK EXPERIENCE ── */
+#WorkExperience {
+    background-color: #111;
+    padding: 36px 40px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#Jobtitle, #JobTitle2, #JobTitle3, #JobTitle4 {
+    background: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s ease;
+}
+
+#Jobtitle:hover, #JobTitle2:hover, #JobTitle3:hover, #JobTitle4:hover {
+    border-color: #2e2e2e;
+}
+
+#JobTitle4 {
+    margin-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.job-header h3 {
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.15s;
+    margin: 0;
+}
+
+.job-header h3:hover {
+    color: #ffffff;
+}
+
+.job-date {
+    color: #444;
+    font-size: 12px;
+    margin: 0;
+}
+
+.company-name {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.job-desc {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ── PROJECTS ── */
+#Projects {
+    background: #0d0d0d;
+    padding: 36px 40px;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#projectright, #projectleft, #projectcenter {
+    flex: 1;
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 22px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+#projectright:hover, #projectleft:hover, #projectcenter:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+#projectright img, #projectleft img, #projectcenter img {
+    border-radius: 8px;
+    background: #1a1a1a;
+}
+
+#projectright p, #projectleft p, #projectcenter p {
+    color: #aaa;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#projectright p:first-of-type, #projectleft p:first-of-type, #projectcenter p:first-of-type {
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+#typeofproject, #typeofproject1, #typeofproject2 {
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    padding: 5px 14px;
+    font-size: 12px;
+    margin-top: 6px;
+    font-family: inherit;
+}
+
+#typeofproject:hover, #typeofproject1:hover, #typeofproject2:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: none;
+}
+
+/* ── EDUCATION ── */
+#education {
+    background: #111;
+    padding: 36px 40px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#education > p {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 18px 0;
+}
+
+#collage, #highschool {
+    background: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 10px;
+}
+
+#highschool {
+    margin-bottom: 0;
+}
+
+#collage p, #highschool p {
+    color: #777;
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+#collage p:first-child, #highschool p:first-child {
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+/* ── CONTACT / EMAIL ── */
+#Email {
+    background: #0d0d0d;
+    padding: 64px 40px;
+    text-align: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#Email h3 {
+    color: #f0f0f0;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+#Email > p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#phonelink {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#phonenumber, #emaillink, #linkedin {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #e8e8e8;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+#phonenumber:hover, #emaillink:hover, #linkedin:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-1px);
+}
+
+/* ── SCROLL PROGRESS BAR ── */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    z-index: 9999;
+    transition: width 0.1s linear;
+}
+
+/* ── ACTIVE NAV ── */
+#work.nav-active,
+#about.nav-active,
+#contact.nav-active {
+    color: #ffffff !important;
+    background: #1e1e1e !important;
+}
+
+/* ── LOGO SCRAMBLE CURSOR ── */
+#nametext {
+    cursor: none;
+    user-select: none;
+}
+
+/* ── CUSTOM CURSOR ── */
+* { cursor: none; }
+
+#custom-cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+}
+
+#custom-cursor.hovered {
+    width: 48px;
+    height: 48px;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+#cursor-dot {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+/* ── PARTICLE CANVAS ── */
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#intro {
+    position: relative;
+}
+
+#intro > *:not(#particle-canvas) {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── HERO PHOTO BACKGROUND ──
+   Add your photo: save it as "me.jpg" (or .png) in the same folder,
+   then uncomment the background-image line below.
+── */
+#intro::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 45%;
+    height: 100%;
+    /* background-image: url('me.jpg'); */
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 100%);
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+
+/* ── FADE-IN ANIMATION ── */
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── TYPING CURSOR ── */
+#typed-text::after {
+    content: '|';
+    animation: blink 0.7s step-end infinite;
+    color: #ffffff;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ── FOOTER ── */
+#footer {
+    background: #0d0d0d;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#footer p {
+    color: #333;
+    font-size: 13px;
+    margin: 0;
+}
